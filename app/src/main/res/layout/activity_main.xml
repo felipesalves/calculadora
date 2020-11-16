@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/numero_4"
+        style="@style/numeros_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/numero_1"
+        app:layout_constraintEnd_toStartOf="@+id/numero_5"
+        app:layout_constraintStart_toEndOf="@+id/operador_coseno_inverso"
+        app:layout_constraintTop_toBottomOf="@+id/numero_7" />
+
+    <TextView
+        android:id="@+id/numero_5"
+        style="@style/numeros_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/numero_2"
+        app:layout_constraintEnd_toStartOf="@+id/numero_6"
+        app:layout_constraintStart_toEndOf="@+id/numero_4"
+        app:layout_constraintTop_toBottomOf="@+id/numero_8" />
+
+    <TextView
+        android:id="@+id/numero_6"
+        style="@style/numeros_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@+id/numero_3"
+        app:layout_constraintEnd_toStartOf="@+id/operador_subtracao"
+        app:layout_constraintStart_toEndOf="@+id/numero_5"
+        app:layout_constraintTop_toBottomOf="@+id/numero_9" />
+
+    <TextView
+        android:id="@+id/operador_subtracao"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/operador_soma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numero_6"
+        app:layout_constraintTop_toBottomOf="@+id/operador_mutiplicacao" />
+
+    <TextView
+        android:id="@+id/numero_7"
+        style="@style/numeros_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@+id/numero_4"
+        app:layout_constraintEnd_toStartOf="@+id/numero_8"
+        app:layout_constraintStart_toEndOf="@+id/Operador_tangente_inverso"
+        app:layout_constraintTop_toBottomOf="@+id/operador_inverso" />
+
+    <TextView
+        android:id="@+id/numero_8"
+        style="@style/numeros_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@+id/numero_5"
+        app:layout_constraintEnd_toStartOf="@+id/numero_9"
+        app:layout_constraintStart_toEndOf="@+id/numero_7"
+        app:layout_constraintTop_toBottomOf="@+id/operador_mod" />
+
+    <TextView
+        android:id="@+id/numero_9"
+        style="@style/numeros_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@+id/numero_6"
+        app:layout_constraintEnd_toStartOf="@+id/operador_mutiplicacao"
+        app:layout_constraintStart_toEndOf="@+id/numero_8"
+        app:layout_constraintTop_toBottomOf="@+id/operador_raiz" />
+
+    <TextView
+        android:id="@+id/operador_mutiplicacao"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        android:text="x"
+        app:layout_constraintBottom_toTopOf="@+id/operador_subtracao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numero_9"
+        app:layout_constraintTop_toBottomOf="@+id/operador_divisao" />
+
+    <TextView
+        android:id="@+id/operador_log"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="log"
+        app:layout_constraintBottom_toTopOf="@+id/operador_inverso"
+        app:layout_constraintEnd_toStartOf="@+id/operador_potencia"
+        app:layout_constraintStart_toEndOf="@+id/operador_tangente"
+        app:layout_constraintTop_toBottomOf="@+id/operador_seno" />
+
+    <TextView
+        android:id="@+id/operador_potencia"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="^"
+        app:layout_constraintBottom_toTopOf="@+id/operador_mod"
+        app:layout_constraintEnd_toStartOf="@+id/parentese_abrir"
+        app:layout_constraintStart_toEndOf="@+id/operador_log"
+        app:layout_constraintTop_toBottomOf="@+id/operador_quadrado" />
+
+    <TextView
+        android:id="@+id/parentese_abrir"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="("
+        app:layout_constraintBottom_toTopOf="@+id/operador_raiz"
+        app:layout_constraintEnd_toStartOf="@+id/parentese_fechar"
+        app:layout_constraintStart_toEndOf="@+id/operador_potencia"
+        app:layout_constraintTop_toBottomOf="@+id/deletar" />
+
+    <TextView
+        android:id="@+id/parentese_fechar"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        android:text=")"
+        app:layout_constraintBottom_toTopOf="@+id/operador_divisao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/parentese_abrir"
+        app:layout_constraintTop_toBottomOf="@+id/backspace" />
+
+
+    <TextView
+        android:id="@+id/historico"
+        android:layout_width="0dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="end"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:scrollbars="vertical"
+        android:lines="10"
+        android:maxLines="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="end"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expressao" />
+
+    <TextView
+        android:id="@+id/expressao"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/historico" />
+
+    <TextView
+        android:id="@+id/operador_coseno"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="cos"
+        app:layout_constraintBottom_toTopOf="@+id/operador_tangente"
+        app:layout_constraintEnd_toStartOf="@+id/operador_seno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/resultado" />
+
+    <TextView
+        android:id="@+id/operador_seno"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="sen"
+        app:layout_constraintBottom_toTopOf="@+id/operador_log"
+        app:layout_constraintEnd_toStartOf="@+id/operador_quadrado"
+        app:layout_constraintStart_toEndOf="@+id/operador_coseno"
+        app:layout_constraintTop_toTopOf="@id/resultado" />
+
+    <TextView
+        android:id="@+id/operador_quadrado"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="x²"
+        app:layout_constraintBottom_toTopOf="@+id/operador_potencia"
+        app:layout_constraintEnd_toStartOf="@+id/deletar"
+        app:layout_constraintStart_toEndOf="@+id/operador_seno"
+        app:layout_constraintTop_toTopOf="@id/resultado" />
+
+    <TextView
+        android:id="@+id/deletar"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="CE"
+        app:layout_constraintBottom_toTopOf="@+id/parentese_abrir"
+        app:layout_constraintEnd_toStartOf="@+id/backspace"
+        app:layout_constraintStart_toEndOf="@+id/operador_quadrado"
+        app:layout_constraintTop_toTopOf="@id/resultado" />
+
+    <ImageView
+        android:id="@+id/backspace"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/backspace"
+        app:layout_constraintBottom_toTopOf="@+id/parentese_fechar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/deletar"
+        app:layout_constraintTop_toTopOf="@id/resultado" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="43dp" />
+
+    <TextView
+        android:id="@+id/operador_tangente"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="tan"
+        app:layout_constraintBottom_toTopOf="@+id/operador_lognat"
+        app:layout_constraintEnd_toStartOf="@+id/operador_log"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operador_coseno" />
+
+    <TextView
+        android:id="@+id/operador_inverso"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="inv"
+        app:layout_constraintBottom_toTopOf="@+id/numero_7"
+        app:layout_constraintEnd_toStartOf="@+id/operador_mod"
+        app:layout_constraintStart_toEndOf="@+id/operador_lognat"
+        app:layout_constraintTop_toBottomOf="@+id/operador_log" />
+
+    <TextView
+        android:id="@+id/operador_mod"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="mod"
+        app:layout_constraintBottom_toTopOf="@+id/numero_8"
+        app:layout_constraintEnd_toStartOf="@+id/operador_raiz"
+        app:layout_constraintStart_toEndOf="@+id/operador_inverso"
+        app:layout_constraintTop_toBottomOf="@+id/operador_potencia" />
+
+    <TextView
+        android:id="@+id/operador_raiz"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="√"
+        app:layout_constraintBottom_toTopOf="@+id/numero_9"
+        app:layout_constraintEnd_toStartOf="@+id/operador_divisao"
+        app:layout_constraintStart_toEndOf="@+id/operador_mod"
+        app:layout_constraintTop_toBottomOf="@+id/parentese_abrir" />
+
+    <TextView
+        android:id="@+id/operador_divisao"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        android:text="/"
+        app:layout_constraintBottom_toTopOf="@+id/operador_mutiplicacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/operador_raiz"
+        app:layout_constraintTop_toBottomOf="@+id/parentese_fechar" />
+
+    <TextView
+        android:id="@+id/operador_lognat"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="log nat"
+        app:layout_constraintBottom_toTopOf="@+id/Operador_tangente_inverso"
+        app:layout_constraintEnd_toStartOf="@+id/operador_inverso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operador_tangente" />
+
+    <TextView
+        android:id="@+id/Operador_tangente_inverso"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="arc tan"
+        app:layout_constraintBottom_toTopOf="@+id/operador_coseno_inverso"
+        app:layout_constraintEnd_toStartOf="@+id/numero_7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operador_lognat" />
+
+    <TextView
+        android:id="@+id/operador_coseno_inverso"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="arc cos"
+        app:layout_constraintBottom_toTopOf="@+id/operador_seno_inverso"
+        app:layout_constraintEnd_toStartOf="@+id/numero_4"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Operador_tangente_inverso" />
+
+    <TextView
+        android:id="@+id/operador_seno_inverso"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="arc sen"
+        app:layout_constraintBottom_toTopOf="@+id/operador_fatorial"
+        app:layout_constraintEnd_toStartOf="@+id/numero_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operador_coseno_inverso" />
+
+    <TextView
+        android:id="@+id/numero_1"
+        style="@style/numeros_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/trocar_sinal"
+        app:layout_constraintEnd_toStartOf="@+id/numero_2"
+        app:layout_constraintStart_toEndOf="@+id/operador_seno_inverso"
+        app:layout_constraintTop_toBottomOf="@+id/numero_4" />
+
+    <TextView
+        android:id="@+id/operador_soma"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/operador_igual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/numero_3"
+        app:layout_constraintTop_toBottomOf="@+id/operador_subtracao" />
+
+    <TextView
+        android:id="@+id/numero_3"
+        style="@style/numeros_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/ponto"
+        app:layout_constraintEnd_toStartOf="@+id/operador_soma"
+        app:layout_constraintStart_toEndOf="@+id/numero_2"
+        app:layout_constraintTop_toBottomOf="@+id/numero_6" />
+
+    <TextView
+        android:id="@+id/numero_2"
+        style="@style/numeros_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/numero_0"
+        app:layout_constraintEnd_toStartOf="@+id/numero_3"
+        app:layout_constraintStart_toEndOf="@+id/numero_1"
+        app:layout_constraintTop_toBottomOf="@+id/numero_5" />
+
+    <TextView
+        android:id="@+id/trocar_sinal"
+        style="@style/numeros_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="+/-"
+        app:layout_constraintEnd_toStartOf="@+id/numero_0"
+        app:layout_constraintStart_toEndOf="@+id/operador_fatorial"
+        app:layout_constraintTop_toBottomOf="@+id/numero_1" />
+
+    <TextView
+        android:id="@+id/numero_0"
+        style="@style/numeros_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/ponto"
+        app:layout_constraintStart_toEndOf="@+id/trocar_sinal"
+        app:layout_constraintTop_toBottomOf="@+id/numero_2" />
+
+    <TextView
+        android:id="@+id/ponto"
+        style="@style/numeros_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="."
+        app:layout_constraintEnd_toStartOf="@id/operador_igual"
+        app:layout_constraintStart_toEndOf="@+id/numero_0"
+        app:layout_constraintTop_toBottomOf="@+id/numero_3" />
+
+    <TextView
+        android:id="@+id/operador_igual"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="="
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ponto"
+        app:layout_constraintTop_toBottomOf="@+id/operador_soma"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/operador_fatorial"
+        style="@style/operadores_Button"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="n!"
+        app:layout_constraintEnd_toStartOf="@+id/trocar_sinal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operador_seno_inverso" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

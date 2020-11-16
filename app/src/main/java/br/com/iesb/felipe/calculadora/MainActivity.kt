@@ -54,12 +54,9 @@ class MainActivity : AppCompatActivity() {
 
         trocar_sinal.setOnClickListener{
             if(expressao.text.isNotBlank()){
-                System.out.println("isNotBlank->")
                 if(expressao.text.contains("-")){
-                    System.out.println("contais->")
                     expressao.text =  expressao.text.toString().replace("-", "")
                 } else {
-                    System.out.println("else contais->")
                     expressao.text =  "-"+expressao.text.toString()
                 }
             }
@@ -115,7 +112,7 @@ class MainActivity : AppCompatActivity() {
     fun calcularExpressoesbiblioteca(valor: String){
 
         val valorFormatado = AlterarFormatacaTela(valor)
-        System.out.println("valorFormatado->"+valorFormatado)
+
         try {
 
             val calculoExpressao = ExpressionBuilder(valorFormatado).build()
@@ -131,11 +128,6 @@ class MainActivity : AppCompatActivity() {
             }
 
             historico.append(valor+"="+resultado.text+"\n")
-            //historico.addTextChangedListener {  }
-            //historico.text.lines().
-
-            System.out.println("historico-leh->"+historico.length())
-            System.out.println("historico-->"+historico.text)
 
         }catch (e: Exception){
 
@@ -212,7 +204,6 @@ class MainActivity : AppCompatActivity() {
         }else
             if(expressao.contains("tan")  && !expressao.contains("arc_tan")
                 &&  !expressao.contains("atan")) {
-                System.out.println("arc_tan - IF")
                 return   expressao.replace("tan", "tan_")
         }
 
@@ -227,21 +218,17 @@ class MainActivity : AppCompatActivity() {
 
         // coseno inverso
         if(expressao.contains("arc_cos")){
-            System.out.println("arc_cos - IF")
             return   expressao.replace("arc_cos", "acos")
         }else
             if(expressao.contains("acos")) {
-                System.out.println("arc_cos - ELSE")
                 return   expressao.replace("acos", "arc_cos")
          }
 
         // tangente inverso
         if(expressao.contains("arc_tan")){
-            System.out.println("arc_tan - IF")
             return   expressao.replace("arc_tan", "atan")
         }else
             if(expressao.contains("atan")) {
-                System.out.println("arc_tan - ELSE")
                 return   expressao.replace("atan", "arc_tan")
             }
 
